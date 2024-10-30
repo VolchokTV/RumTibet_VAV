@@ -5,7 +5,7 @@
 }
 
 header{
-    background-image: url(images/header-background.jpg);
+    background-image: url("../images/header-background.jpg");
     color: var(--header);
 }
  header h1{
