@@ -4,11 +4,38 @@
     --header-text: #ffffff;
 }
 
+body{
+
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}*/
+
+.nunito-sans-top {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
 header{
     background-image: url("images/header-background.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
-    color: var(--header);
+    color: var(--header-text);
 
 }
 
@@ -16,7 +43,41 @@ header{
     max-width: 1180px;
     margin: auto;
 }
+
+.header-top{
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.top-menu{     
+    justify-content: right;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    padding-right: 0;
+    list-style-type: none;
+    gap: 24px;
+}
  header h1{
     color: var(--header-text);
     text-transform: uppercase;
  }
+
+ .top-menu li a{
+    text-decoration: none;
+    color: var(--header-text);
+}
+.top-right{
+    gap: 48px;
+}
+
+button{
+    background-color: var(--button);
+    color: var(--header-text);
+    height: 44px;
+}
