@@ -1,14 +1,22 @@
 :root{
     --button: #1A3E3E;
     --akcent-text: #F2BE22;
-    --header: #ffffff;
+    --header-text: #ffffff;
 }
 
 header{
-    background-image: url("../images/header-background.jpg");
+    background-image: url("images/header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: var(--header);
+
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto;
 }
  header h1{
-    color: var(--header);
+    color: var(--header-text);
     text-transform: uppercase;
  }
