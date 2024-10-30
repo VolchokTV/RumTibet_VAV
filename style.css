@@ -1,5 +1,14 @@
 :root{
     --button: #1A3E3E;
     --akcent-text: #F2BE22;
-
+    --header: #ffffff;
 }
+
+header{
+    background-image: url(images/header-background.jpg);
+    color: var(--header);
+}
+ header h1{
+    color: var(--header);
+    text-transform: uppercase;
+ }
