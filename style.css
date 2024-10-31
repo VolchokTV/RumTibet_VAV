@@ -1,4 +1,4 @@
-:root{
+:root {
     --button: #1A3E3E;
     --akcent-text: #F2BE22;
     --header-text: #ffffff;
@@ -6,15 +6,15 @@
     --second-family: "NEXT ART", sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
 @font-face {
     font-family: 'NEXT ART';
     src:
-    /*local("NEXT ART_Bold"),*/
-     url('/fonts/NEXTART-Bold.woff2') format('woff2') ;       
+        /*local("NEXT ART_Bold"),*/
+        url('/fonts/NEXTART-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -40,34 +40,34 @@ body{
     font-size: 16px;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-  }
+        "wdth" 100,
+        "YTLC" 500;
+}
 
-.start{
+.start {
     background-image: url("images/header-background.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
-.container{
+.container {
     max-width: 1180px;
     margin: auto;
 }
 
-.header-top{
+.header-top {
     justify-content: space-between;
     margin-top: 16px;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.top-menu{     
+.top-menu {
     justify-content: right;
     align-items: center;
     height: 40px;
@@ -77,7 +77,7 @@ body{
     gap: 24px;
 }
 
- .start h1{
+.start h1 {
     font-family: var(--second-family);
     color: var(--header-text);
     text-transform: uppercase;
@@ -86,29 +86,48 @@ body{
     line-height: 75px;
     letter-spacing: 0.02em;
     text-align: left;
- }
+}
 
- .top-menu li a{
+.top-menu li a {
     text-decoration: none;
     color: var(--header-text);
 }
 
-.top-menu li a:hover{
+.top-menu li a:hover {
     color: var(--akcent-text);
 }
-.top-right{
+
+.top-right {
     gap: 48px;
 }
 
-.btn{
-    background-color: var(--button);
-    color: var(--header-text);
+.header-consult {
+    padding: 0;
+    width: 157px;
     height: 44px;
-    border: #1A3E3E 1px solid;
-    border-radius: 4px;
 }
 
-.btn:hover{
+.btn {
+    background-color: var(--button);
+    color: var(--header-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1a3e3e;
+    border-radius: 4px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .192px;
+    color: #fdfdfd;
+    background: #1a3e3e;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
     background-color: var(--header-text);
     color: var(--button);
 }
