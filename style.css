@@ -2,6 +2,8 @@
     --button: #1A3E3E;
     --akcent-text: #F2BE22;
     --header-text: #ffffff;
+    --font-family: "Nunito Sans", sans-serif;
+    --second-family: "NEXT ART", sans-serif;
 }
 
 body{
@@ -9,10 +11,10 @@ body{
 }
 
 @font-face {
-    font-family: 'NEXT';
+    font-family: 'NEXT ART';
     src:
-    local("NEXT ART_Bold"),
-     url('../fonts/NEXTART-Bold.woff2') format('woff2') ;       
+    /*local("NEXT ART_Bold"),*/
+     url('/fonts/NEXTART-Bold.woff2') format('woff2') ;       
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -42,12 +44,12 @@ body{
       "YTLC" 500;
   }
 
-header{
+.start{
     background-image: url("images/header-background.jpg");
+    background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat; 
-    color: var(--header-text);
-
+    background-repeat: no-repeat;
+    
 }
 
 .container{
@@ -74,8 +76,9 @@ header{
     list-style-type: none;
     gap: 24px;
 }
- header h1{
-    font-family: 'NEXT';
+
+ .start h1{
+    font-family: var(--second-family);
     color: var(--header-text);
     text-transform: uppercase;
     font-size: 50px;
@@ -91,15 +94,21 @@ header{
 }
 
 .top-menu li a:hover{
-   
     color: var(--akcent-text);
 }
 .top-right{
     gap: 48px;
 }
 
-button{
+.btn{
     background-color: var(--button);
     color: var(--header-text);
     height: 44px;
+    border: #1A3E3E 1px solid;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: var(--header-text);
+    color: var(--button);
 }
