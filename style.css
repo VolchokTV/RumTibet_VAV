@@ -7,6 +7,17 @@
 body{
     margin: 0;
 }
+
+@font-face {
+    font-family: 'NEXT';
+    src:
+    local("NEXT ART_Bold"),
+     url('fonts/NEXTART-Bold.woff2') format('woff2') ;       
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
 
@@ -64,13 +75,24 @@ header{
     gap: 24px;
 }
  header h1{
+    font-family: 'NEXT';
     color: var(--header-text);
     text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0.02em;
+    text-align: left;
  }
 
  .top-menu li a{
     text-decoration: none;
     color: var(--header-text);
+}
+
+.top-menu li a:hover{
+   
+    color: var(--akcent-text);
 }
 .top-right{
     gap: 48px;
