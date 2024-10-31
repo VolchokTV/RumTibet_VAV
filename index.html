@@ -57,23 +57,167 @@
                 </div>
             </header>
 
-     
-        
-            <div>
-                <h1>Насладись прогулкой в горах
+            <div class="start__info">
+                <h1 class="start__h1">Насладись прогулкой в горах
                     с командой единомышленников
                 </h1>
+                <form class="start__search">
+                    <label class="start__label">
+                        <select class="start__location" name="location">
+                            <option value="" disabled selected>Локация для тура</option>
+                            <option value="ru">Россия</option>
+                            <option value="us">США</option>
+                            <option value="uk">Великобритания</option>
+                        </select>
+                        <span class="start__span">выберите из списка</span>
+                    </label>
+                    <div class="start__label">
+                        <div class="start__block-date">
+                            <input class="start__date" type="date" name="start-date">
+                            <input class="start__date" type="date" name="final-date">
+                        </div>
+                        <span class="start__span">укажите диапазон</span>
+                    </div>
+                    <label class="start__label">
+                        <select class="start__quantity" name="quantity">
+                            <option value="" disabled selected>Участники</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <span class="start__span">минимум 4 человека</span>
+                    </label>
+                    <button class="start__search-program">Найти программу</button>
+                </form>
             </div>
         </div>
     </section>
+    <section class="about">
 
+    </section>
     <section>
 
     </section>
     </Main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-wrapper">
+                    <div class="footer__items">
+                        <h3 class="footer__title">Компания «РумТибет»</h3>
+                        <p class="footer__text">Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть
+                            более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+                        </p>
+                        <div class="footer__contacts">
+                            <a class="footer__contact" href="mailto:info@domain.com">info@domain.com</a>
+                            <a class="footer__contact" href="tel:+71234567890">
+                                +7 (123) 456-78-90</a>
+                        </div>
+                        <ul class="footer__socials">
+                            <li class="footer__socials-item">
+                                <a class="footer__social-link" href="#" aria-label="Перейти в наш Telegram"><svg class="footer__social">
+                                    <use xlink:href="images/sprite.svg#tg"></use>
+                                </svg></a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a class="footer__social-link" href="#" aria-label="Перейти в наш ВКонтакте"><svg class="footer__social">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg></a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a class="footer__social-link" href="#" aria-label="Перейти в наш Pinterest"><svg class="footer__social">
+                                    <use xlink:href="images/sprite.svg#pint"></use>
+                                </svg></a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a class="footer__social-link" href="#" aria-label="Перейти в наш Скайп"> <svg class="footer__social">
+                                    <use xlink:href="images/sprite.svg#sk"></use>
+                                </svg></a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <footer>
-
+                    <div class="footer__items">
+                        <h3 class="footer__title">Наши услуги</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Прогулки в горы летом</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Зимние походы в горы</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Посещение храмов в горах</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Экстремальные виды туризма</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link footer__link--new" href="#">Походы в джунглях Амазонии</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Поездка в Африку</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <h3 class="footer__title">Важно для путешествий</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Как собрать в долгий поход?</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Жизненно важные предметы для похода</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Медицинская страховка, гарантии безопасности</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <svg class="footer__arrow">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                                <a class="footer__link" href="#">Если вы врач — загляните сюда</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-wrapper">
+                    <p class="footer__info">ИП Константинопольский К.К., 2023</p>
+                    <a class="footer__policy" href="#">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

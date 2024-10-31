@@ -131,3 +131,10 @@ body {
     background-color: var(--header-text);
     color: var(--button);
 }
+.start__h1 {
+    margin: 0 0 41px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
