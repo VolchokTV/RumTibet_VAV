@@ -1,6 +1,7 @@
 :root {
-    --button: #1A3E3E;
     --akcent-text: #F2BE22;
+    --border:  #e1e3e4;
+    --button: #1A3E3E;    
     --header-text: #fdfdfd;
     --search-bg-color: rgba(255,255,255,.2);
     --font-family: "Nunito Sans", sans-serif;
@@ -44,7 +45,7 @@ body {
         "wdth" 100,
         "YTLC" 500;
 }
-
+/* ШАПКА САЙТА */
 .start {
     background-image: url("images/header-background.jpg");
     background-position: center center;
@@ -170,7 +171,7 @@ body {
 }
 
 .start__location {
-    border: 1px solid #e1e3e4;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 0 16px;
     height: 52px;
@@ -184,7 +185,7 @@ body {
 
 .start__block-date {
     display: flex;
-    border: 1px solid #e1e3e4;
+    border: 1px solid var(--border);
     border-radius: 8px
 }
 
@@ -226,7 +227,7 @@ body {
 }
 
 .start__quantity {
-    border: 1px solid #e1e3e4;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 0 16px;
     height: 52px;
@@ -264,7 +265,7 @@ body {
 }
 
 
-/*footer*/
+/* footer Подвал */
 
 .footer {
     background-color: #1a3e3e
@@ -324,7 +325,7 @@ body {
 }
 
 .footer__contact:hover {
-    color: #f2be22
+    color: var(--akcent-text)
 }
 
 .footer__socials {
@@ -339,12 +340,16 @@ body {
 .footer__social {
     width: 26px;
     height: 26px;
-    fill: #fff;
+    fill:var(--header-text);
     transition: all .1s
 }
 
-.footer__social:hover {
-    fill: #f2be22
+/*.footer__social:hover {
+    fill: var(--akcent-text);
+}*/
+.footer__social:hover,
+.footer__social:focus{
+    fill: var(--akcent-text);
 }
 
 .footer__list {
@@ -359,9 +364,9 @@ body {
 }
 
 .footer__list-item:hover .footer__link {
-    -webkit-text-decoration: underline 1px solid #f2be22;
-    text-decoration: underline 1px solid #f2be22;
-    color: #f2be22
+    -webkit-text-decoration: underline 1px solid var(--akcent-text);
+    text-decoration: underline 1px solid var(--akcent-text);
+    color: var(--akcent-text);
 }
 
 .footer__list-item:hover .footer__link--new::after {
@@ -370,7 +375,7 @@ body {
 }
 
 .footer__list-item:hover .footer__arrow {
-    fill: #f2be22
+    fill: var(--akcent-text);
 }
 
 .footer__list-item+.footer__list-item {
@@ -447,5 +452,5 @@ body {
 }
 
 .footer__policy:hover {
-    color: #f2be22
+    color: var(--akcent-text);
 }
