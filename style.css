@@ -34,7 +34,7 @@ body {
     "YTLC" 500;
 }*/
 
-.nunito-sans-top {
+/*.nunito-sans-top {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -43,7 +43,7 @@ body {
     font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
-}
+}*/
 /* ШАПКА САЙТА */
 .start {
     background-image: url("images/header-background.jpg");
@@ -90,6 +90,7 @@ body {
 }
 
 .top-menu li a {
+    font-size: 16px;
     text-decoration: none;
     color: var(--header-text);
 }
