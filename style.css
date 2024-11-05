@@ -10,13 +10,12 @@
 
 body {
     margin: 0;
+    font-family: var(--font-family);
 }
 
 @font-face {
     font-family: 'NEXT ART';
-    src:
-        /*local("NEXT ART_Bold"),*/
-        url('/fonts/NEXTART-Bold.woff2') format('woff2');
+    src: url('fonts/NEXTART-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -61,7 +60,7 @@ body {
 
 .header-top {
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 0;
 }
 
 .flex {
@@ -259,7 +258,7 @@ body {
 }
 
 .start__search-program:hover {
-    border: 1px solid var(--header-text);;
+    border: 1px solid var(--header-text);
     color: var(--header-text);
     background: var(--button);
 }
