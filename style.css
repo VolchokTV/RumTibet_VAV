@@ -812,7 +812,6 @@ body {
 
 .newsletter__text {
     margin: 0 0 8px;
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -863,7 +862,6 @@ body {
 
 .newsletter__terms {
     margin: 0;
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -905,7 +903,6 @@ body {
 
 .footer__title {
     margin: 0 0 20px;
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -914,7 +911,6 @@ body {
 
 .footer__text {
     margin: 0;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -928,7 +924,6 @@ body {
 }
 
 .footer__contact {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
