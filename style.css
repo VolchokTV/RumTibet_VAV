@@ -1,11 +1,11 @@
 :root {
     --akcent-text: #F2BE22;
-    --border:  #e1e3e4;
-    --button: #1A3E3E;    
+    --border: #e1e3e4;
+    --button: #1A3E3E;
     --header-text: #fdfdfd;
     --title-text: #18121E;
     --bg-col-sect: #f3f5f4;
-    --search-bg-color: rgba(255,255,255,.2);
+    --search-bg-color: rgba(255, 255, 255, .2);
     --font-family: "Nunito Sans", sans-serif;
     --second-family: "NEXT ART", sans-serif;
 }
@@ -15,12 +15,35 @@ body {
     font-family: var(--font-family);
 }
 
+
 @font-face {
     font-family: 'NEXT ART';
     src: url('fonts/NEXTART-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.rounded-img {
+    border-radius: 10px;
+    /* Замените 15px на любое другое значение для изменения степени скругления */
+}
+
+.rounded-img-TLC {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.rounded-img-TRC {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name
@@ -125,7 +148,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: .192px;
-    color:var(--header-text);
+    color: var(--header-text);
     background: var(--button);
     transition: all .3s;
     cursor: pointer;
@@ -211,8 +234,8 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color:var(--header-text);
-    background-color: rgba(0,0,0,0)
+    color: var(--header-text);
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .start__block-date {
@@ -231,7 +254,7 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: var(--header-text);
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .start__date::-webkit-calendar-picker-indicator {
@@ -243,7 +266,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color:var(--header-text);
+    color: var(--header-text);
 }
 
 .start__date::placeholder {
@@ -267,15 +290,16 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color:var(--header-text);
-    background-color: rgba(0,0,0,0);
+    color: var(--header-text);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .start__search-program {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--header-text);;
+    border: 1px solid var(--header-text);
+    ;
     border-radius: 4px;
     padding: 0;
     width: 213px;
@@ -329,7 +353,7 @@ body {
     padding: 0;
     width: 50px;
     height: 50px;
-    background-color: rgba(253,253,253,.6);
+    background-color: rgba(253, 253, 253, .6);
     transition: all .3s;
     will-change: transform;
     cursor: pointer
@@ -367,6 +391,8 @@ body {
     width: 200px;
     height: 52px
 }
+
+
 
 /* OFFER  ЛУЧШИЕ ПРЕДЛОЖЕНИЯ*/
 
@@ -456,6 +482,7 @@ body {
     max-width: 510px;
     gap: 10px
 }
+
 /* ПОПУЛЯРНОЕ */
 .popular {
     padding: 100px 0
@@ -478,7 +505,8 @@ body {
     border-radius: 32px
 }
 
-.popular__item:hover .overlay,.popular__item:focus .overlay {
+.popular__item:hover .overlay,
+.popular__item:focus .overlay {
     top: 0
 }
 
@@ -497,7 +525,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #1a3e3e;
-    background: rgba(253,253,253,.4);
+    background: rgba(253, 253, 253, .4);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
 }
@@ -526,7 +554,7 @@ body {
     padding: 30px 20px 20px;
     height: 100%;
     box-sizing: border-box;
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, .2);
     transition: all 2s ease-in-out;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px)
@@ -568,7 +596,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #fdfdfd;
-    background: rgba(255,255,255,.3)
+    background: rgba(255, 255, 255, .3)
 }
 
 .overlay__descr {
@@ -616,7 +644,7 @@ body {
     border-radius: 10px;
     padding: 16px;
     height: auto;
-    box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, .12);
     background: #fdfdfd
 }
 
@@ -643,8 +671,8 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    -webkit-text-decoration: underline 1px solid rgba(0,0,0,0);
-    text-decoration: underline 1px solid rgba(0,0,0,0);
+    -webkit-text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+    text-decoration: underline 1px solid rgba(0, 0, 0, 0);
     color: #18121e;
     transition: all .1s;
     cursor: pointer;
@@ -688,8 +716,8 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    -webkit-text-decoration: underline 1px solid rgba(0,0,0,0);
-    text-decoration: underline 1px solid rgba(0,0,0,0);
+    -webkit-text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+    text-decoration: underline 1px solid rgba(0, 0, 0, 0);
     color: #1a3e3e;
     transition: all .1s
 }
@@ -751,7 +779,7 @@ body {
     justify-content: center;
     border: 0;
     padding: 0;
-    background-color: rgba(26,62,62,0);
+    background-color: rgba(26, 62, 62, 0);
     opacity: 0;
     transition: all .3s;
     cursor: pointer
@@ -765,8 +793,9 @@ body {
     background-image: url("../images/gallery-look.svg")
 }
 
-.gallery__pic-overlay:hover,.gallery__pic-overlay:focus {
-    background-color: rgba(26,62,62,.3);
+.gallery__pic-overlay:hover,
+.gallery__pic-overlay:focus {
+    background-color: rgba(26, 62, 62, .3);
     opacity: 1
 }
 
@@ -788,7 +817,7 @@ body {
     margin-bottom: -96px;
     border-radius: 6px;
     padding: 40px 100px;
-    box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, .12);
     background: #fdfdfd;
     gap: 15px
 }
@@ -948,7 +977,7 @@ body {
 .footer__social {
     width: 32px;
     height: 32px;
-    fill:var(--header-text);
+    fill: var(--header-text);
     transition: all .3s
 }
 
@@ -956,7 +985,7 @@ body {
     fill: var(--akcent-text);
 }*/
 .footer__social:hover,
-.footer__social:focus{
+.footer__social:focus {
     fill: var(--akcent-text);
 }
 
@@ -1004,8 +1033,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    -webkit-text-decoration: underline 1px solid rgba(0,0,0,0);
-    text-decoration: underline 1px solid rgba(0,0,0,0);
+    -webkit-text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+    text-decoration: underline 1px solid rgba(0, 0, 0, 0);
     color: #fdfdfd;
     transition: all .1s
 }
@@ -1029,6 +1058,7 @@ body {
 .footer__bottom-wrapper {
     justify-content: center
 }
+
 .footer__bottom {
     font-family: var(--font-family);
     font-weight: 600;
@@ -1056,7 +1086,7 @@ body {
     text-decoration: underline;
     transition: all .1s;
     cursor: pointer;
-    color:var(--header-text);
+    color: var(--header-text);
 }
 
 .footer__policy:hover {
