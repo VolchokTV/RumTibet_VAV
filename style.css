@@ -243,8 +243,8 @@ a {
 }
 
 .start__location option {
-    background-color: var(--search-bg-color); /* Фон для опций */
-    color: var(--header-text); /* Цвет текста для опций */
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
 }
 
 .start__block-date {
@@ -314,13 +314,17 @@ a {
     color: var(--header-text);
     background-color: rgba(0, 0, 0, 0);
 }
+.start__quantity option {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0)
+
+}
 
 .start__search-program {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--header-text);
-    ;
     border-radius: 4px;
     padding: 0;
     width: 213px;
