@@ -556,9 +556,9 @@ a {
 }
 
 .popular__stars-img {
-    margin-right: 7px;
-    width: 17px;
-    height: 16px;
+    margin-right: 5px;
+    width: 24px;
+    height: 22px;
     fill: #f2be22;
     transform: translateY(-2px)
 }
@@ -637,7 +637,7 @@ a {
     width: 176px;
     height: 44px
 }
-
+/*  BLOG BLOG BLOG */
 .blog {
     padding: 100px 0;
     background-color: #f3f5f4
