@@ -959,7 +959,7 @@ a {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #f3f5f4
+    color:  var(--bg-col-sect);
 }
 
 .footer__text {
@@ -967,7 +967,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #fff
+    color:  var(--bg-col-sect);
 }
 
 .footer__contacts {
@@ -981,7 +981,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-decoration: underline;
-    color: #fff;
+    color:  var(--bg-col-sect);
     transition: all .1s
 }
 
@@ -989,21 +989,21 @@ a {
     color: var(--akcent-text)
 }
 
-.footer__socials {
+.footer__social { 
     display: flex;
-    justify-content: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 21px
-}
-
-.footer__social {
+    gap: 16px;
     width: 32px;
     height: 32px;
     fill: var(--header-text);
     transition: all .3s
 }
+.footer__social-link > svg > path {
+    fill: var(--header-text);
+}
+.footer__social-link:hover > svg > path {
+    fill: var(--akcent-text);
+}
+
 
 /*.footer__social:hover {
     fill: var(--akcent-text);
@@ -1031,8 +1031,8 @@ a {
 }
 
 .footer__list-item:hover .footer__link--new::after {
-    -webkit-text-decoration: underline 1px solid #fff;
-    text-decoration: underline 1px solid #fff
+    -webkit-text-decoration: underline 1px solid var(--bg-col-sect);
+    text-decoration: underline 1px solid var(--bg-col-sect);
 }
 
 .footer__list-item:hover .footer__arrow {
@@ -1047,7 +1047,7 @@ a {
     margin-right: 10px;
     width: 6px;
     height: 10px;
-    fill: #fff;
+    fill: var(--bg-col-sect);
     transition: all .1s
 }
 
@@ -1088,7 +1088,7 @@ a {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color:  var(--bg-col-sect);
     background-color: #18121e
 }
 
