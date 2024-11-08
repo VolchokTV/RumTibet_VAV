@@ -32,8 +32,9 @@ img {
 }
 
 .rounded-img {
-    border-radius: 24px;/* Замените __XX_px на любое другое значение для изменения степени скругления */
-    
+    border-radius: 24px;
+    /* Замените __XX_px на любое другое значение для изменения степени скругления */
+
 }
 
 .rounded-img-TLC {
@@ -251,7 +252,8 @@ a {
     display: flex;
     border: 1px solid var(--border);
     border-radius: 8px;
-    position: relative; /* Обязательно добавьте относительное позиционирование к родительскому элементу */   
+    position: relative;
+    /* Обязательно добавьте относительное позиционирование к родительскому элементу */
 }
 
 .start__date {
@@ -277,7 +279,7 @@ a {
     color: var(--header-text);
 }
 
-.start__date::placeholder {    
+.start__date::placeholder {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
@@ -292,14 +294,20 @@ a {
 .start__block-date::before {
     content: '';
     background-image: url('images/formkit_date.svg');
-    background-size: contain; /* Или cover в зависимости от ваших нужд */
+    background-size: contain;
+    /* Или cover в зависимости от ваших нужд */
     background-repeat: no-repeat;
-    width: 22px; /* Установите ширину для псевдоэлемента */
-    height: 22px; /* Установите высоту для псевдоэлемента */
+    width: 22px;
+    /* Установите ширину для псевдоэлемента */
+    height: 22px;
+    /* Установите высоту для псевдоэлемента */
     position: absolute;
-    top: 14px; /* Отступ от верхнего края */
-    right: 12px; /* Отступ от правого края */
-    opacity: 1.0; /* Задайте нужную прозрачность */
+    top: 14px;
+    /* Отступ от верхнего края */
+    right: 12px;
+    /* Отступ от правого края */
+    opacity: 1.0;
+    /* Задайте нужную прозрачность */
 }
 
 .start__quantity {
@@ -314,10 +322,10 @@ a {
     color: var(--header-text);
     background-color: rgba(0, 0, 0, 0);
 }
+
 .start__quantity option {
     color: #000;
     background-color: rgba(0, 0, 0, 0)
-
 }
 
 .start__search-program {
@@ -637,6 +645,7 @@ a {
     width: 176px;
     height: 44px
 }
+
 /*  BLOG BLOG BLOG */
 .blog {
     padding: 100px 0;
@@ -959,7 +968,7 @@ a {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color:  var(--bg-col-sect);
+    color: var(--bg-col-sect);
 }
 
 .footer__text {
@@ -967,7 +976,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color:  var(--bg-col-sect);
+    color: var(--bg-col-sect);
 }
 
 .footer__contacts {
@@ -981,7 +990,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-decoration: underline;
-    color:  var(--bg-col-sect);
+    color: var(--bg-col-sect);
     transition: all .1s
 }
 
@@ -989,7 +998,7 @@ a {
     color: var(--akcent-text)
 }
 
-.footer__social { 
+.footer__social {
     display: flex;
     gap: 16px;
     width: 32px;
@@ -997,10 +1006,12 @@ a {
     fill: var(--header-text);
     transition: all .3s
 }
-.footer__social-link > svg > path {
+
+.footer__social-link>svg>path {
     fill: var(--header-text);
 }
-.footer__social-link:hover > svg > path {
+
+.footer__social-link:hover>svg>path {
     fill: var(--akcent-text);
 }
 
@@ -1021,7 +1032,7 @@ a {
 
 .footer__list-item {
     display: flex;
-    align-items: baseline
+    align-items: baseline;
 }
 
 .footer__list-item:hover .footer__link {
@@ -1035,9 +1046,7 @@ a {
     text-decoration: underline 1px solid var(--bg-col-sect);
 }
 
-.footer__list-item:hover .footer__arrow {
-    fill: var(--akcent-text);
-}
+
 
 .footer__list-item+.footer__list-item {
     margin-top: 16px
@@ -1045,10 +1054,14 @@ a {
 
 .footer__arrow {
     margin-right: 10px;
-    width: 6px;
-    height: 10px;
-    fill: var(--bg-col-sect);
-    transition: all .1s
+    width: 10px;
+    height: 14px;
+    fill: #fff;
+    transition: fill 0.1s
+}
+
+.footer__list-item:hover .footer__arrow {
+    fill: #f2be22
 }
 
 .footer__link {
@@ -1060,7 +1073,7 @@ a {
     -webkit-text-decoration: underline 1px solid rgba(0, 0, 0, 0);
     text-decoration: underline 1px solid rgba(0, 0, 0, 0);
     color: #fdfdfd;
-    transition: all .1s
+    transition: color 0.1s
 }
 
 .footer__link--new::after {
@@ -1088,7 +1101,7 @@ a {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color:  var(--bg-col-sect);
+    color: var(--bg-col-sect);
     background-color: #18121e
 }
 
