@@ -872,6 +872,7 @@ a {
 }
 
 .newsletter__text {
+    
     margin: 0 0 8px;
     font-weight: 600;
     font-size: 16px;
@@ -879,11 +880,15 @@ a {
     color: #18121e
 }
 
-.newsletter__form {
+/*.newsletter__form {   
+    
+}*/
+
+.newsletter__form-elements{
     display: flex;
+    align-items: end;
     margin-bottom: 8px;
     gap: 16px;
-    max-height: 44px;
 }
 
 .newsletter__input {
