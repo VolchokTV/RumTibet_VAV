@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РумТибет</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,30 +66,30 @@
                     с командой единомышленников
                 </h1>
                 <form class="start__search">
-                    <label class="start__label">
+                    <div>
                         <select class="start__location" name="location">
                             <option value="" disabled selected>Локация для тура</option>
                             <option value="ru">Россия</option>
                             <option value="us">США</option>
                             <option value="uk">Великобритания</option>
                         </select>
-                        <span class="start__span">выберите из списка</span>
-                    </label>
+                        <p class="start__span">выберите из списка</p>
+                    </div>
                     <div class="start__label">
                         <div class="start__block-date">
                             <input class="start__date" type="text" name="start-date" placeholder="Дата похода">
                         </div>
-                        <span class="start__span">укажите диапазон</span>
+                        <p class="start__span">укажите диапазон</p>
                     </div>
-                    <label class="start__label">
+                    <div>
                         <select class="start__quantity" name="quantity">
                             <option value="" disabled selected>Участники</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
                         </select>
-                        <span class="start__span">минимум 4 человека</span>
-                    </label>
+                        <p class="start__span">минимум 4 человека</p>
+                    </div>
                     <button class="start__search-program">Найти программу</button>
                 </form>
             </div>
