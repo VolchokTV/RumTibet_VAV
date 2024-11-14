@@ -87,6 +87,7 @@ a {
 .container {
     max-width: 1180px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .header-top {
@@ -104,6 +105,12 @@ a {
     height: 100dvh;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.flex-centr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-menu {
@@ -141,22 +148,23 @@ a {
     gap: 48px;
 }
 
-.header-consult {
+/*.header-consult {
     padding: 0;
     width: 157px;
     height: 44px;
-}
+}*/
 
 .btn {
+    /*height: 52px;*/
     background-color: var(--button);
     color: var(--header-text);
     text-decoration: none;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     border: 1px solid #1a3e3e;
     border-radius: 4px;
-    padding: 0;
+    padding: 16px 36px;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -172,6 +180,32 @@ a {
     color: var(--button);
 }
 
+.btn-short {
+    /*height: 44px;*/
+    background-color: var(--button);
+    color: var(--header-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1a3e3e;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .192px;
+    color: var(--header-text);
+    background: var(--button);
+    transition: all .3s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-short:hover {
+    background-color: var(--header-text);
+    color: var(--button);
+}
 
 .subtitle {
     margin: 0 0 8px;
@@ -216,7 +250,7 @@ a {
 .start__search {
     display: flex;
     border-radius: 10px;
-    padding: 40px 42px;
+    padding: 40px 32px;
     background: var(--search-bg-color);
     backdrop-filter: blur(6px);
     gap: 24px
@@ -238,7 +272,8 @@ a {
 }
 
 .start__location {
-    width: 270px;
+   /* width: 270px;*/
+   flex: 1;
     height: 52px;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -254,7 +289,7 @@ a {
     /* Стрелка */
     background-repeat: no-repeat;
     background-position: right 16px center;
-    padding-right: 30px;
+    padding-right: 120px;
     /* Отступ для стрелки */
 }
 
@@ -276,6 +311,7 @@ a {
 }
 
 .start__date {
+    width: 270px;
     flex: 1;
     border: 0;
     padding: 0 8px;
@@ -322,8 +358,7 @@ a {
     /* Задайте нужную прозрачность */
 }
 
-.start__quantity {
-    width: 270px;
+.start__quantity {    
     height: 52px;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -341,6 +376,7 @@ a {
     /* Стрелка */
     background-repeat: no-repeat;
     background-position: right 16px center;
+    padding-right: 160px;
 }
 
 .start__quantity option {
@@ -358,8 +394,8 @@ a {
     justify-content: center;
     border: 1px solid var(--header-text);
     border-radius: 4px;
-    padding: 0;
-    width: 213px;
+    padding: 0 36px;
+    /*width: 213px;*/
     height: 52px;
     font-family: var(--font-family);
     font-weight: 700;
@@ -416,7 +452,8 @@ a {
     cursor: pointer
 }
 
-.about__video-btn:hover {
+.about__video-link:hover 
+.about__video-btn, .about__video-play {
     transform: scale(1.2)
 }
 
@@ -444,10 +481,10 @@ a {
     color: var(--title-text);
 }
 
-.about__btn {
+/*.about__btn {
     width: 200px;
     height: 52px
-}
+}*/
 
 
 
@@ -828,6 +865,7 @@ a {
 }
 
 .gallery__pic-overlay {
+    border-radius: 6px;
     position: absolute;
     inset: 0;
     display: flex;
@@ -844,9 +882,9 @@ a {
 .gallery__pic-overlay::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
-    background-image: url("../images/gallery-look.svg")
+    width: 24px;
+    height: 24px;
+    background-image: url("images/gallery-look.svg")
 }
 
 .gallery__pic-overlay:hover,
@@ -856,6 +894,7 @@ a {
 }
 
 .gallery__img {
+    border-radius: 6px;
     height: 100%
 }
 
@@ -929,13 +968,6 @@ a {
     background: #f3f5f4
 }
 
-.newsletter__input::-moz-placeholder {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: #18121e
-}
 
 .newsletter__input::placeholder {
     font-family: var(--font-family);
@@ -945,11 +977,10 @@ a {
     color: #18121e
 }
 
-.newsletter__button {
-    border-radius: 4px;
-    width: 240px;
-    height: 44px
+.nwsl-btn{
+    appearance: none;
 }
+
 
 .newsletter__terms {
     margin: 0;

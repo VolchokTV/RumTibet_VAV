@@ -54,7 +54,7 @@
 
                         </nav>
 
-                        <a class="header-consult btn" href="#">
+                        <a class="header-consult btn-short" href="#">
                             Консультация
                         </a>
                     </div>
@@ -109,19 +109,20 @@
                         </picture>
                     </div>
                     <div class="about__video">
-                        <a href="#">
+                        <a class="about__video-link" href="#">
                             <div class="about__piс">
                                 <img class="about__img rounded-img" src="images/shale.jpg" alt="Дом в горах">
                                 <!-- <picture>
                                     <source srcset="images/about-video.avif" type="image/avif">
                                 <source srcset="images/about-video.webp" type="image/webp"> </picture>-->
                             </div>
+
+                            <button class="about__video-btn" aria-label="Смотреть видео">
+                                <svg class="about__video-play">
+                                    <use xlink:href="images/sprite.svg#video-play"></use>
+                                </svg>
+                            </button>
                         </a>
-                        <button class="about__video-btn"  aria-label="Смотреть видео">
-                            <svg class="about__video-play">
-                                <use xlink:href="images/sprite.svg#video-play"></use>
-                            </svg>
-                        </button>
                     </div>
                 </div>
                 <div class="about__content">
@@ -131,7 +132,7 @@
                         есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа
                         Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
                         «consectetur» и занялся его поисками в классической латинской литературе.</p>
-                    <a class="about__btn btn" href="#">Программа тура</a>
+                    <span><a class="about__btn btn" href="#">Программа тура</a></span>
                 </div>
             </div>
         </div>
@@ -143,14 +144,12 @@
                     <p class="offer__subtitle subtitle">наше предложение</p>
                     <h2 class="offer__title title">Лучшие программы для тебя</h2>
                     <p class="offer__text">Его корни уходят в один фрагмент классической латыни 45 года н. э., то
-                        есть
-                        более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+                        есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
                     <ul class="offer__items">
                         <li class="offer__item">
                             <span class="offer__item-title">Опытный гид</span>
                             Для современного мира базовый вектор развития предполагает независимые способы
-                            реализации
-                            соответствующих условий активизации.
+                            реализации соответствующих условий активизации.
                         </li>
                         <li class="offer__item">
                             <span class="offer__item-title">Безопасный поход</span>
@@ -164,7 +163,7 @@
                             соответствующих условий активизации.
                         </li>
                     </ul>
-                    <a class="offer__price btn" href="#">Стоимость программ</a>
+                    <a class="btn" href="#">Стоимость программ</a>
                 </div>
                 <div class="offer__media">
 
@@ -191,7 +190,7 @@
                 <p class="popular__subtitle subtitle">по версии отдыхающих</p>
                 <h2 class="popular__title title">Популярные направления</h2>
             </div>
-            <div class="popular__swiper swiper" data-mobile="false">
+            <div class="popular__swiper " data-mobile="false">
                 <div class="popular__media swiper-wrapper">
                     <div class="popular__item swiper-slide">
                         <div class="popular__pic">
@@ -300,7 +299,7 @@
                     </div>
                 </div>
             </div>
-            <a class="popular__btn btn" href="#">Рейтинг направлений</a>
+            <div class="flex-centr"><a class="btn" href="#">Рейтинг направлений</a></div>
         </div>
     </section>
 
@@ -393,7 +392,7 @@
                     </article>
                 </div>
             </div>
-            <a class="blog__btn btn" href="#">Другие материалы</a>
+            <div class="flex-centr"><a class="btn" href="#">Другие материалы</a></div>
         </div>
     </section>
     <!--  ГАЛЕРЕЯ  -->
@@ -406,50 +405,50 @@
             <div class="gallery__swiper swiper" data-mobile="false">
                 <div class="gallery__media swiper-wrapper ">
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                        
                             <img class="gallery__img" src="images/balls.jpg" alt="Фотосессия в горах">
-                        </picture>
+                        
                         <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/balls.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                       
                             <img class="gallery__img" src="images/fotik.jpg" alt="Карта">
-                        </picture>
+                        
                         <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/fotik.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                        
                             <img class="gallery__img" src="images/dubai.jpg" alt="Дубай">
-                        </picture>
+                        
                         <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/dubai.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                        
                             <img class="gallery__img" src="images/beach.jpg" alt="Пляж с высоты">
-                        </picture>
+                        
                         <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/beach.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                        
                             <img class="gallery__img" src="images/grandKanyon.jpg" alt="Горы">
-                        </picture>
-                        <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/grandKanyon.jpg"
+                        
+                            <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/grandKanyon.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                     <div class="gallery__pic swiper-slide">
-                        <picture>
+                        
                             <img class="gallery__img" src="images/gallery-map.jpg" alt="Карта">
-                        </picture>
-                        <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/gallery-map.jpg"
+                        
+                            <button class="gallery__pic-overlay" data-fancybox="gallery" data-src="images/gallery-map.jpg"
                             aria-label="Смотреть фото"></button>
                     </div>
                 </div>
             </div>
-            <a class="gallery__btn btn" href="#">Наш pinterest</a>
+            <div class="flex-centr"><a class="btn" href="#">Наш pinterest</a></div>
         </div>
     </section>
     <section class="newsletter">
@@ -466,7 +465,7 @@
                             <div class="newsletter__form-elements">
                                 <input class="newsletter__input" type="email" inputmode="email" name="email"
                                     placeholder="name@domain.com" required="required">
-                                <button class="newsletter__button btn" type="submit">Подписаться на новости</button>
+                                <button class="nwsl-btn btn-short" type="submit">Подписаться на новости</button>
                             </div>
                         </form>
                     </div>
