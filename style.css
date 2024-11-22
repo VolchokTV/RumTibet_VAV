@@ -137,6 +137,7 @@ a {
 }
 
 .top-menu li a {
+    font-weight: 600;
     font-size: 16px;
     text-decoration: none;
     color: var(--header-text);
@@ -1241,11 +1242,13 @@ a {
     }
 
     .top-menu {
-        flex-direction: column
+        flex-direction: column;
+        align-items:flex-start;
     }
 
     .top-menu-item {
         position: relative;
+        left: 0%;
         padding-left: 18px;
         transition: all .1s
     }
@@ -1310,7 +1313,7 @@ a {
     .start__search {
         flex-wrap: wrap
     }
-    
+
     .about__video {
         margin: -274px 0 0 65px
     }
