@@ -41,14 +41,14 @@
                     </a>
 
                     <div class="top-right flex">
-                        <nav>
-                            <ul class="top-menu flex">
-                                <li><a href="#">Главное</a></li>
-                                <li><a href="#">Про гида</a></li>
-                                <li><a href="#">Программа тура</a></li>
-                                <li><a href="#">Стоимость</a></li>
-                                <li><a href="#">Блог</a></li>
-                                <li><a href="#">Контакты</a></li>
+                        <nav class="header__nav">
+                            <ul class="top-menu">
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Главное</a></li>
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Про гида</a></li>
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Программа тура</a></li>
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Стоимость</a></li>
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Блог</a></li>
+                                <li class="top-menu-item"><a class="top-menu-link" href="#">Контакты</a></li>
 
                             </ul>
 
@@ -57,6 +57,11 @@
                         <a class="header-consult btn-short" href="#">
                             Консультация
                         </a>
+                        <button class="header__burger" aria-label="Открыть меню">
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                        </button>
                     </div>
                 </div>
             </header>
@@ -66,8 +71,8 @@
                     с командой единомышленников
                 </h1>
                 <form class="start__search">
-                    <div>
-                        <select class="start__location" name="location">
+                    <div class="start__label">
+                        <select class="start__location" >
                             <option value="" disabled selected>Локация для тура</option>
                             <option value="ru">Россия</option>
                             <option value="us">США</option>
@@ -81,7 +86,7 @@
                         </div>
                         <p class="start__span">укажите диапазон</p>
                     </div>
-                    <div>
+                    <div class="start__label">
                         <select class="start__quantity" name="quantity">
                             <option value="" disabled selected>Участники</option>
                             <option value="4">4</option>
