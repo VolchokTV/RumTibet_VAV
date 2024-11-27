@@ -162,7 +162,7 @@ a {
     background-color: var(--button);
     color: var(--header-text);
     text-decoration: none;
-    
+
     align-items: center;
     justify-content: center;
     border: 1px solid #1a3e3e;
@@ -182,6 +182,7 @@ a {
     background-color: var(--header-text);
     color: var(--button);
 }
+
 .header__burger {
     display: none
 }
@@ -267,7 +268,7 @@ a {
 }
 
 .start__info {
-    padding-bottom: 82px
+    padding-bottom: 8vh
 }
 
 .start__search {
@@ -295,8 +296,8 @@ a {
 }
 
 .start__location {
-   /* width: 270px;*/
-   flex: 1;
+    /* width: 270px;*/
+    flex: 1;
     height: 52px;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -381,7 +382,7 @@ a {
     /* Задайте нужную прозрачность */
 }
 
-.start__quantity {    
+.start__quantity {
     height: 52px;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -475,8 +476,8 @@ a {
     cursor: pointer
 }
 
-.about__video-link:hover 
-.about__video-btn, .about__video-play {
+.about__video-link:hover .about__video-btn,
+.about__video-play {
     transform: scale(1.2)
 }
 
@@ -625,17 +626,6 @@ a {
     border-radius: 32px
 }
 
-.overlay__info {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 410px;
-    background: rgba(255, 255, 255, .2);
-    padding: 20px  0 25px; 
-    border-radius: 0 0 32px 32px
-
-}
-
 .popular__stars {
     position: absolute;
     right: 0;
@@ -676,7 +666,7 @@ a {
     top: 80%;
     display: flex;
     flex-direction: column;
-   
+
     padding: 30px 20px 20px;
     height: 100%;
     box-sizing: border-box;
@@ -688,7 +678,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 38px
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .2);
+    padding: 20px 0 25px;
+    border-radius: 0 0 32px 32px
 }
 
 .overlay__title {
@@ -1007,7 +1003,7 @@ a {
     color: #18121e
 }
 
-.nwsl-btn{
+.nwsl-btn {
     appearance: none;
 }
 
@@ -1021,7 +1017,7 @@ a {
 }
 
 .newsletter__terms-link:hover {
-    
+
     text-decoration: underline 1px solid #18121e
 }
 
@@ -1221,13 +1217,13 @@ a {
 
 @media(max-width: 1200px) {
     .newsletter__wrapper {
-        padding:40px
+        padding: 40px
     }
 }
 
 @media(max-width: 1100px) {
     .header__nav {
-        position:fixed;
+        position: fixed;
         inset: 0;
         z-index: 5;
         padding: 45px 16px 50px;
@@ -1243,7 +1239,7 @@ a {
 
     .top-menu {
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
     }
 
     .top-menu-item {
@@ -1258,7 +1254,7 @@ a {
     }
 
     .top-menu-link {
-        text-decoration: underline 1px solid rgba(0,0,0,0)
+        text-decoration: underline 1px solid rgba(0, 0, 0, 0)
     }
 
     .top-menu-link::before {
@@ -1292,7 +1288,7 @@ a {
         border: 0;
         width: 21px;
         height: 18px;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         cursor: pointer
     }
 
@@ -1310,6 +1306,7 @@ a {
     .header__burger--active .header__burger-line:nth-of-type(2) {
         opacity: 0
     }
+
     .start__search {
         flex-wrap: wrap
     }
@@ -1343,9 +1340,9 @@ a {
 }
 
 @media(max-width: 992px) {
-    .start__info {
+    /* .start__info {
         padding:300px 0 62px
-    }
+    } */
 
     .start__search {
         flex-wrap: wrap
@@ -1374,7 +1371,8 @@ a {
         grid-template-columns: 150px
     }
 
-    .popular__item:hover .overlay,.popular__item:focus .overlay {
+    .popular__item:hover .overlay,
+    .popular__item:focus .overlay {
         top: 80%
     }
 
@@ -1447,7 +1445,7 @@ a {
 
 @media(max-width: 768px) {
     .start__title {
-        font-size:38px
+        font-size: 38px
     }
 
     .offer__media {
@@ -1523,7 +1521,7 @@ a {
 
 @media(max-width: 576px) {
     .subtitle {
-        font-size:16px
+        font-size: 16px
     }
 
     .title {
@@ -1535,9 +1533,9 @@ a {
         width: 84px
     }
 
-    .start__info {
+    /* .start__info {
         padding: 234px 0 50px
-    }
+    } */
 
     .start__title {
         margin-bottom: 32px;
@@ -1686,7 +1684,6 @@ a {
 
 @media(max-width: 389px) {
     .start__title {
-        font-size:22px
+        font-size: 22px
     }
 }
-

@@ -8,5 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     burgerButton.addEventListener("click", () => {
         nav.classList.toggle("header__nav--active");
+        burgerButton.classList.toggle("header__burger--active");
     });
 });
