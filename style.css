@@ -615,6 +615,9 @@ a {
     margin-bottom: 50px;
     gap: 20px
 }
+.popular__swiper {
+    overflow-x: auto;
+}
 
 .popular__img {
     border-radius: 32px
