@@ -296,8 +296,6 @@ a {
 }
 
 .start__location {
-    /* width: 270px;*/
-    flex: 1;
     height: 52px;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -612,11 +610,10 @@ a {
 
 .popular__media {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
-    gap: 20px
-}
-.popular__swiper {
     overflow-x: auto;
+    gap: 20px
 }
 
 .popular__img {
@@ -747,6 +744,7 @@ a {
 }
 
 .blog__media {
+    overflow-x: auto;
     margin-bottom: 50px
 }
 
@@ -1456,7 +1454,7 @@ a {
     }
 
     .popular__media {
-        gap: 0
+        gap: 20px
     }
 
     .popular__item {
@@ -1503,14 +1501,14 @@ a {
 
     .news {
         flex-wrap: unset;
-        gap: unset
+        gap: 24px
     }
 
     .gallery__media {
         display: flex;
         margin-bottom: 32px;
         height: 250px;
-        gap: unset
+        gap: 20px
     }
 
     .gallery__pic {
