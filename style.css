@@ -1512,12 +1512,24 @@ a {
        justify-content: space-between;
         height: 250px; 
         margin-bottom: 32px;
-        overflow-x: auto;
+         overflow-x: scroll; /* Добавляем горизонтальную прокрутку */
+        flex-wrap: nowrap; /* если хотите избежать переноса */
+        overflow-y: hidden; /* Убирает прокрутку */
+       
         gap: 20px
     }
 
     .gallery__pic {
-       width: 280px
+       display: block; 
+       width: 280px;
+       flex: none;
+       height: auto
+    }
+    .gallery__img {
+        width: 100%; /* Изображение будет растягиваться до ширины родителя */
+        height: 100%; /* Сохранение пропорций */
+        object-fit: cover; 
+        display: block; /* Убрать пустое пространство снизу */
     }
 
     .gallery__pic-overlay {
